@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Handle GET requests (display the form)
 app.get('/', (req, res) => {
-    const checkResult = `<span style='color:red'> Try the magic word "fred"</span>`;
+    const checkResult = `<span style='color:red'> Why aren't you writing the word 'fred'?</span>`;
     // Send the HTML page
     res.send(`
         <!DOCTYPE html>
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
         <body>
             <h3 align=center>t2a27-render-node</h3>
             <form action="/" method="post">
-                <label for="myText01">Enter Text:</label>
+                <label for="myText01">Enter Fred:</label>
                 <input type="text" id="myText01" name="myText01">
                 <input type="submit" value="Submit">
             </form>
@@ -43,9 +43,9 @@ app.post('/', (req, res) => {
     }
 
     if (myCheck) {
-        checkResult = `<b style='color:green'> Cool! </b>`;
+        checkResult = `<b style='color:green'> Fred! Fred! Fred! Fred! Fred! Fred! Fred! </b>`;
     } else {
-        checkResult = `<span style='color:red'> Try the magic word "fred"</span>`;
+        checkResult = `<span style='color:green'> fred!</span>`;
     }
     
     // Re-send the HTML page with the new result
