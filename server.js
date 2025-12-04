@@ -45,7 +45,7 @@ app.post('/', (req, res) => {
     if (myCheck) {
         checkResult = `<b style='color:green'> Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! </b>`;
     } else {
-        checkResult = `<span style='color:red'> If you aren't writing fred this is gon be you: <img href="punch01.piskel" width=900></img> </span>`;
+        checkResult = `<span style='color:red'> If you aren't writing fred this is gon be you: <img href="New Piskel.gif" width=900></img> </span>`;
     }
     
     // Re-send the HTML page with the new result
