@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
         <!DOCTYPE html>
         <html>
         <head>
-            <title>Browser Title</title>
+            <title>Fred :|</title>
         </head>
         <body>
             <h3 align=center>t2a27-render-node</h3>
@@ -43,7 +43,7 @@ app.post('/', (req, res) => {
     }
 
     if (myCheck) {
-        checkResult = `<b style='color:green'> Fred! Fred! Fred! Fred! Fred! Fred! Fred! </b>`;
+        checkResult = `<b style='color:green'> Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! Fred! </b>`;
     } else {
         checkResult = `<span style='color:green'> fred!</span>`;
     }
